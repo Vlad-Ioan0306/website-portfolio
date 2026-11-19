@@ -506,19 +506,35 @@ footer {
 
 /* ===== Mobile ===== */
 @media (max-width: 720px) {
+  #hero .container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn-outline {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .terminal-window {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    min-height: 300px;
+  }
+
   .hero-content h1 {
     font-size: 2.2rem;
   }
   .hero-content h2 {
     font-size: 1.25rem;
-  }
-  .hero-actions {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .btn-outline {
-    margin-left: 0;
-    margin-top: 10px;
   }
   .about-grid,
   .contact-content {
